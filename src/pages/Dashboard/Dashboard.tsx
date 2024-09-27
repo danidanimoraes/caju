@@ -5,13 +5,14 @@ import { useRegistrations } from "./hooks";
 import { Container } from "./styles";
 
 const isCPFValid = (cpf: string) => {
-  return !cpf || (cpf.length === 11 && !isNaN(Number(cpf)));
+  const justNumbers = cpf.replace(/\./g, "").replace(/-/g, "");
+  return !cpf || justNumbers.length === 11;
 };
 
 export const DashboardPage = () => {
   const [term, setTerm] = useState("");
   const [allRegistrations, setAllRegistrations] = useState<Registration[]>([]);
-
+  console.log(isCPFValid(term));
   const useRegistrationsParams = {
     cpf: term,
   };

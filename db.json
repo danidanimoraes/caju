@@ -1,20 +1,12 @@
 {
   "registrations": [
     {
-      "id": "9720",
-      "employeeName": "daniele moraes",
+      "id": "e9e8",
+      "employeeName": "Daniele de Moraes",
       "email": "daniele@caju.com",
-      "cpf": "223.232.323-23",
-      "admissionDate": "2022-09-16",
+      "cpf": "333.333.333-33",
+      "admissionDate": "2020-09-19",
       "status": "APPROVED"
-    },
-    {
-      "id": "9772",
-      "employeeName": "sdfsdf ",
-      "email": "sdfsdf@dsfdf.com",
-      "cpf": "323.423.423-42",
-      "admissionDate": "1992-06-17",
-      "status": "REVIEW"
     }
   ]
 }
