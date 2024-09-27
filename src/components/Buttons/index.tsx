@@ -14,21 +14,25 @@ const Button = styled.button`
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   font-size: 16px;
   font-weight: 600;
+
+  &:disabled {
+    background-color: gray;
+    cursor: auto;
+  }
 `;
 
 export const ButtonSmall = styled.button<{
-  bgcolor?: string;
-  color?: string;
+  $bgColor?: string;
+  $color?: string;
 }>`
   font-size: 12px;
   outline: none;
   border-radius: 4px;
   border: none;
   padding: 4px 16px;
-  background-color: ${(props) => props.bgcolor ?? 'none'};
-  color: ${(props) => props.color ?? "#000"};
+  background-color: ${(props) => props.$bgColor ?? "none"};
+  color: ${(props) => props.$color ?? "#000"};
   cursor: pointer;
 `;
-
 
 export default Button;
